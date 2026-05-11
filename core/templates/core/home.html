@@ -1,0 +1,115 @@
+{% extends "core/base.html" %}
+
+{% block title %}Romantwo | Co-Leadership Training{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<section id="sodenkenwir" class="thinking-section">
+
+    <div class="thinking-grid">
+
+        <div class="thinking-content">
+
+            <div class="thinking-top-row">
+
+                <div>
+
+                    <p class="thinking-eyebrow">So denken wir</p>
+
+                    <h2 class="thinking-title">
+                        Co-Leitung kann Führung tragfähiger,
+                        differenzierter und wirksamer machen.
+                    </h2>
+
+                </div>
+
+                <div class="thinking-image-wrap">
+
+                    <div class="thinking-image-placeholder">
+
+                        <div class="placeholder-icon">
+                            <div class="placeholder-line left"></div>
+                            <div class="placeholder-line right"></div>
+
+                            <div class="placeholder-mountain"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="thinking-text">
+                <p>
+                    Gleichzeitig entstehen dort, wo Verantwortung geteilt wird,
+                    besondere Spannungen und Anforderungen.
+                </p>
+
+                <p>
+                    Diese bewusst zu gestalten, ist keine Selbstverständlichkeit.
+                </p>
+            </div>
+
+            <div class="thinking-divider"></div>
+
+            <div class="thinking-support">
+
+                <h3>
+                    Wir unterstützen Co-Leitungen und Führungsteams
+                    mit geteilter Verantwortung
+                </h3>
+
+                <ul class="thinking-list">
+                    <li>beim Aufbau neuer Zusammenarbeit</li>
+                    <li>in Phasen von Veränderung</li>
+                    <li>bei Spannungen und festgefahrenen Dynamiken</li>
+                    <li>wenn gemeinsame Führung unklar oder belastet geworden ist</li>
+                </ul>
+
+            </div>
+
+            <a href="#contact" class="thinking-button">
+                Unverbindliches Erstgespräch vereinbaren
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="audio" class="audio-section">
+
+    <div class="audio-inner">
+
+        <p class="audio-eyebrow">Audio</p>
+
+        <button class="audio-play-button" type="button">
+            <span class="audio-icon">▶</span>
+            <span class="audio-label">Abspielen</span>
+        </button>
+
+        <audio id="romans-audio">
+            <source src="{% static 'core/audio/romanspod.mp3' %}" type="audio/mpeg">
+            Ihr Browser unterstützt dieses Audio-Element nicht.
+        </audio>
+
+    </div>
+
+</section>
+
+<section id="training" class="section">
+    coming soon...
+</section>
+
+<section id="about" class="section">
+    coming soon...
+</section>
+
+<section id="contact" class="section">
+    coming soon...
+</section>
+
+{% endblock %}
