@@ -13,19 +13,24 @@
 
 <header class="site-header">
     <div class="logo-row">
-        <a href="{% url 'core:home' %}" class="logo-link">
+        <a href="{% url 'core:home' %}" class="logo-link nav-fade-logo">
             <img src="{% static 'core/images/logo.png' %}" alt="Romantwo logo" class="site-logo">
         </a>
     </div>
 
     <div class="nav-row">
-        <nav class="anchor-nav" aria-label="Homepage sections">
-            <a href="#contact">Contact</a>
-            <a href="#sodenkenwir">So denken wir</a>
-            <a href="#audio">Jetzt Horen!</a>
-            <a href="#about">About</a>
-            <a href="#intro">Intro</a>
-        </nav>
+        {% if request.resolver_match.url_name == "home" %}
+            <nav class="anchor-nav" aria-label="Homepage sections">
+                <a href="{% url 'core:contact' %}" class="nav-fade-item">Kontact</a>
+                <a href="#sodenkenwir" class="nav-fade-item">So denken wir</a>
+                <a href="#dastunwir" class="nav-fade-item">Das tun wir</a>
+                <a href="#dassindwir" class="nav-fade-item">Das sind wir</a>
+                <a href="#angebot" class="nav-fade-item">Unsere Angebote</a>
+                <a href="#audio" class="nav-fade-item">Jetzt Horen!</a>
+            </nav>
+        {% else %}
+            <a href="{% url 'core:home' %}" class="nav-fade-item">Home</a>
+        {% endif %}
 
         <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
             <span></span>
@@ -88,5 +93,6 @@
 
 <script src="{% static 'core/js/nav.js' %}"></script>
 <script src="{% static 'core/js/audio-player.js' %}"></script>
+<script src="{% static 'core/js/page-load.js' %}"></script>
 </body>
 </html>

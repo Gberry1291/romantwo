@@ -26,7 +26,8 @@
 
                 <div class="thinking-image-wrap">
 
-                    <div class="thinking-image-placeholder">
+                    
+                    <img src="{% static 'core/images/sodenkenwir.png' %}" class="thinking-image-placeholder">
 
                         <div class="placeholder-icon">
                             <div class="placeholder-line left"></div>
@@ -35,7 +36,7 @@
                             <div class="placeholder-mountain"></div>
                         </div>
 
-                    </div>
+                    </img>
 
                 </div>
 
@@ -70,7 +71,7 @@
 
             </div>
 
-            <a href="#contact" class="thinking-button">
+            <a href="{% url 'core:contact' %}" class="thinking-button">
                 Unverbindliches Erstgespräch vereinbaren
             </a>
 
@@ -79,6 +80,234 @@
     </div>
 
 </section>
+
+
+<section id="dastunwir" class="thinking-section thinking-section-reverse">
+
+    <div class="thinking-grid">
+
+        <div class="thinking-content">
+
+            <div class="thinking-top-row">
+
+                <div class="thinking-image-wrap">
+
+                    <div class="thinking-image-placeholder">
+                        <img src="{% static 'core/images/dastunwir.png' %}" alt="Das tun wir">
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <p class="thinking-eyebrow">
+                        Das tun wir
+                    </p>
+
+                    <h2 class="thinking-title">
+                        Wir arbeiten mit der konkreten Situation – nicht mit vorgefertigten Lösungen.
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="thinking-text">
+                <p>
+                    Dabei machen wir sichtbar, was oft unausgesprochen bleibt:
+                        Erwartungen, Dynamiken, Spannungen und unterschiedliche Vorstellungen von Führung
+                </p>
+            </div>
+
+            <div class="thinking-divider"></div>
+
+            <div class="thinking-support">
+
+                <h3>
+                    So arbeiten wir: 
+                </h3>
+
+                <ul class="thinking-list">
+                    <li>
+                        <p class="boldtext">Verstehen</p>
+                        Wir klären die aktuelle Situation und machen zentrale Spannungsfelder sichtbar.
+                    </li>
+                    <li>
+                        <p class="boldtext">Aushalten</p>
+                        Wir halten Spannungen aus, statt sie vorschnell zu glätten. 
+                    </li>
+                    <li>
+                        <p class="boldtext">Spiegeln</p>
+                        Wir benennen, was zwischen Ihnen passiert – differenziert und ohne Vereinfachung.
+                    </li>
+                    <li>
+                        <p class="boldtext">Klären</p>
+                        Wir präzisieren Rollen, Erwartungen, Verantwortung und Aufgaben.
+                    </li>
+                    <li>
+                        <p class="boldtext">Entscheiden</p>
+                        Wir unterstützen Sie dabei, gemeinsam handlungsfähig zu bleiben.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="dassindwir" class="thinking-section">
+
+    <div class="thinking-grid">
+
+        <div class="thinking-content">
+
+            <div class="thinking-top-row">
+
+                <div>
+
+                    <h2 class="thinking-title">
+                        Das sind wir
+                    </h2>
+
+                </div>
+
+                <div class="thinking-image-wrap">
+
+                    <img src="{% static 'core/images/dassindwir.png' %}" class="thinking-image-placeholder">
+
+                        <div class="placeholder-icon">
+                            <div class="placeholder-line left"></div>
+                            <div class="placeholder-line right"></div>
+
+                            <div class="placeholder-mountain"></div>
+                        </div>
+
+                    </img>
+
+                </div>
+
+            </div>
+
+            <div class="thinking-text">
+                <p>
+                    Wir arbeiten seit vielen Jahren als Führungspersonen im Sozial- und Gesundheitswesen – in alleiniger Verantwortung,
+                     in Co-Leitung und in Führungsteams.
+                </p>
+                <p>
+                    Als Vorgesetzte begleiten wir Führungspersonen in anspruchsvollen Situationen
+                     und organisationalen Veränderungen.
+                </p>
+                <p>
+                    Unsere beruflichen Hintergründe liegen in Sozialarbeit und psychiatrischer Pflege. 
+                    Ergänzend verfügen wir über Weiterbildungen in systemischer Beratung, Führung, Betriebswirtschaft und Projektmanagement.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="angebot" class="offer-section">
+
+    <div class="offer-inner">
+
+        <div class="offer-header">
+            <p class="offer-eyebrow">Unser Angebot</p>
+            <h2 class="offer-title">
+                Formate für Co-Leitungen und Führungsteams mit geteilter Verantwortung.
+            </h2>
+        </div>
+
+        <div class="offer-grid">
+
+            <article class="offer-card offer-card-featured">
+                <div>
+                    <p class="offer-type">Co-Coaching</p>
+                    <h3>CHF 250 / 60 Min.</h3>
+                    <p class="offer-note">exkl. Spesen</p>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <p class="offer-type">Beispiel</p>
+                <h3>Standortklärung bei Wechsel in einer Co-Leitung</h3>
+                <p>
+                    Übergang in neuer Konstellation konstruktiv gestalten,
+                    Klarheit über künftige Zusammenarbeit schaffen.
+                </p>
+                <ul>
+                    <li>2 gemeinsame Sessions innerhalb 3 Monaten</li>
+                    <li>à 2.5 Stunden</li>
+                    <li>kurze Zusammenfassung</li>
+                </ul>
+                <p class="offer-price">CHF 1’300 – 1’500</p>
+            </article>
+
+            <article class="offer-card">
+                <p class="offer-type">Begleitprozess</p>
+                <h3>Zusammenarbeit nachhaltig entwickeln</h3>
+                <p>
+                    Für herausfordernde Situationen, in denen gemeinsame Führung
+                    bewusster gestaltet und stabilisiert werden soll.
+                </p>
+                <ul>
+                    <li>5 Sessions über ca. 3 Monate</li>
+                    <li>à 1.5 – 2 Stunden</li>
+                    <li>bei Bedarf kurze Zwischenabstimmungen</li>
+                </ul>
+                <p class="offer-price">CHF 2’000 – 3’000</p>
+            </article>
+
+        </div>
+
+        <div class="offer-info">
+
+            <p>
+                Wir bieten nach Wunsch an, den Prozess oder Vereinbarungen
+                in einer sinnvollen Form schriftlich festzuhalten.
+            </p>
+
+            <p>
+                Gerne kommen wir für das Coaching zu Ihnen. Reisespesen
+                verrechnen wir der Wegzeit zum Tarif CHF 200 / 60 Min.
+            </p>
+
+            <p>
+                Es braucht auch örtlich einen Perspektivenwechsel? Wir bieten
+                Coaching in unterschiedlichen Settings im Raum Bern oder Thun an.
+            </p>
+
+        </div>
+
+        <div class="offer-cta">
+            <div>
+                <p class="offer-eyebrow">Lassen Sie uns sprechen</p>
+                <h3>
+                    Unsicher, welches Format passt?
+                </h3>
+                <p>
+                    In einem kurzen telefonischen oder persönlichen Gespräch klären wir,
+                    ob und wie wir Sie unterstützen können.
+                    Unverbindlich. Ca. 30 Minuten.
+                </p>
+            </div>
+
+            <a href="{% url 'core:contact' %}" class="offer-button">
+                Erstgespräch vereinbaren
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
 
 <section id="audio" class="audio-section">
 
@@ -98,18 +327,6 @@
 
     </div>
 
-</section>
-
-<section id="training" class="section">
-    coming soon...
-</section>
-
-<section id="about" class="section">
-    coming soon...
-</section>
-
-<section id="contact" class="section">
-    coming soon...
 </section>
 
 {% endblock %}

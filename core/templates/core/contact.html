@@ -1,10 +1,101 @@
 {% extends "core/base.html" %}
+{% load static %}
 
-{% block title %}Contact | Romantwo{% endblock %}
+{% block title %}Kontakt | Romantwo{% endblock %}
 
 {% block content %}
-<section class="page-section">
-    <h1>Contact</h1>
-    <p>Contact details or an inquiry form will go here.</p>
+
+<section class="contact-page">
+
+    <div class="contact-inner">
+
+        <div class="contact-header">
+
+            <h1 class="centertext">Ihr Kontakt zu uns!</h1>
+
+            <p class="centertext">
+                Sie haben Fragen oder benötigen Informationen über unsere Dienstleistungen?
+            </p>
+
+            <div class="contact-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <h2>Direkt kontaktieren</h2>
+
+                <p>
+                    Gerne können Sie uns einfach per Telefon oder E-Mail kontaktieren:
+                </p>
+
+                <div class="contact-method">
+                    <div class="contact-icon-placeholder phone"></div>
+
+                    <div>
+                        <p><strong>R</strong> +55 55 555 55 55</p>
+                        <p><strong>A</strong> +55 55 555 55 55</p>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon-placeholder email"></div>
+
+                    <div>
+                        <p><strong>R</strong> testemail@test.com</p>
+                        <p><strong>A</strong> testemail@test.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form-wrap">
+
+                <h2>Kontaktformular</h2>
+
+                <p>
+                    Oder Sie schreiben uns bequem über unser Kontaktformular:
+                </p>
+
+                <form class="contact-form" method="post">
+                    {% csrf_token %}
+
+                    <div class="form-fields">
+
+                        <div class="form-column">
+                            <label for="{{ form.name.id_for_label }}">Ihr Name</label>
+                            {{ form.name }}
+                            {{ form.name.errors }}
+
+                            <label for="{{ form.email.id_for_label }}">E-Mail Adresse</label>
+                            {{ form.email }}
+                            {{ form.email.errors }}
+
+                            <label for="{{ form.subject.id_for_label }}">Betreff</label>
+                            {{ form.subject }}
+                            {{ form.subject.errors }}
+                        </div>
+
+                        <div class="form-column">
+                            <label for="{{ form.message.id_for_label }}">Nachricht</label>
+                            {{ form.message }}
+                            {{ form.message.errors }}
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="contact-button">
+                        Senden
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
+
 {% endblock %}
