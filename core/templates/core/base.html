@@ -22,11 +22,10 @@
         {% if request.resolver_match.url_name == "home" %}
             <nav class="anchor-nav" aria-label="Homepage sections">
                 <a href="{% url 'core:contact' %}" class="nav-fade-item">Kontact</a>
-                <a href="#sodenkenwir" class="nav-fade-item">So denken wir</a>
                 <a href="#dastunwir" class="nav-fade-item">Das tun wir</a>
                 <a href="#dassindwir" class="nav-fade-item">Das sind wir</a>
                 <a href="#angebot" class="nav-fade-item">Unsere Angebote</a>
-                <a href="#audio" class="nav-fade-item">Jetzt Horen!</a>
+                <a href="#sodenkenwir" class="nav-fade-item">So denken wir</a>
             </nav>
         {% else %}
             <a href="{% url 'core:home' %}" class="nav-fade-item">Home</a>
@@ -86,6 +85,10 @@
             </a>
 
         </div>
+
+        <a href="mailto:hello@romantwo.ch" class="footer-email">
+            Wideblitz@gmail.com
+        </a>
 
     </div>
 

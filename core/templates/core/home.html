@@ -26,17 +26,7 @@
 
                 <div class="thinking-image-wrap">
 
-                    
-                    <img src="{% static 'core/images/sodenkenwir.png' %}" class="thinking-image-placeholder">
-
-                        <div class="placeholder-icon">
-                            <div class="placeholder-line left"></div>
-                            <div class="placeholder-line right"></div>
-
-                            <div class="placeholder-mountain"></div>
-                        </div>
-
-                    </img>
+                    <img src="{% static 'core/images/sodenkenwir.png' %}" class="thinking-image-placeholder"></img>
 
                 </div>
 
@@ -71,9 +61,9 @@
 
             </div>
 
-            <a href="{% url 'core:contact' %}" class="thinking-button">
+            <!-- <a href="{% url 'core:contact' %}" class="thinking-button">
                 Unverbindliches Erstgespräch vereinbaren
-            </a>
+            </a> -->
 
         </div>
 
@@ -91,11 +81,7 @@
             <div class="thinking-top-row">
 
                 <div class="thinking-image-wrap">
-
-                    <div class="thinking-image-placeholder">
-                        <img src="{% static 'core/images/dastunwir.png' %}" alt="Das tun wir">
-                    </div>
-
+                    <img src="{% static 'core/images/dastunwir.png' %}" class="thinking-image-placeholder" alt="Das tun wir">
                 </div>
 
                 <div>
@@ -127,26 +113,45 @@
                     So arbeiten wir: 
                 </h3>
 
-                <ul class="thinking-list">
+                <ul class="thinking-list thinking-list-images">
                     <li>
-                        <p class="boldtext">Verstehen</p>
-                        Wir klären die aktuelle Situation und machen zentrale Spannungsfelder sichtbar.
+                        <img src="{% static 'core/images/verstehen.png' %}" class="thinking-list-image" alt="Verstehen">
+                        <div>
+                            <p class="boldtext">Verstehen</p>
+                            Wir klären die aktuelle Situation und machen zentrale Spannungsfelder sichtbar.
+                        </div>
                     </li>
+
                     <li>
-                        <p class="boldtext">Aushalten</p>
-                        Wir halten Spannungen aus, statt sie vorschnell zu glätten. 
+                        <img src="{% static 'core/images/aushalten.png' %}" class="thinking-list-image" alt="Aushalten">
+                        <div>
+                            <p class="boldtext">Aushalten</p>
+                            Wir halten Spannungen aus, statt sie vorschnell zu glätten.
+                        </div>
                     </li>
+
                     <li>
-                        <p class="boldtext">Spiegeln</p>
-                        Wir benennen, was zwischen Ihnen passiert – differenziert und ohne Vereinfachung.
+                        <img src="{% static 'core/images/spiegeln.png' %}" class="thinking-list-image" alt="Spiegeln">
+                        <div>
+                            <p class="boldtext">Spiegeln</p>
+                            Wir benennen, was zwischen Ihnen passiert – differenziert und ohne Vereinfachung.
+                        </div>
                     </li>
+
                     <li>
-                        <p class="boldtext">Klären</p>
-                        Wir präzisieren Rollen, Erwartungen, Verantwortung und Aufgaben.
+                        <img src="{% static 'core/images/klaren.png' %}" class="thinking-list-image" alt="Klären">
+                        <div>
+                            <p class="boldtext">Klären</p>
+                            Wir präzisieren Rollen, Erwartungen, Verantwortung und Aufgaben.
+                        </div>
                     </li>
+
                     <li>
-                        <p class="boldtext">Entscheiden</p>
-                        Wir unterstützen Sie dabei, gemeinsam handlungsfähig zu bleiben.
+                        <img src="{% static 'core/images/entscheiden.png' %}" class="thinking-list-image" alt="Entscheiden">
+                        <div>
+                            <p class="boldtext">Entscheiden</p>
+                            Wir unterstützen Sie dabei, gemeinsam handlungsfähig zu bleiben.
+                        </div>
                     </li>
                 </ul>
 
@@ -179,26 +184,17 @@
 
                     <img src="{% static 'core/images/dassindwir.png' %}" class="thinking-image-placeholder">
 
-                        <div class="placeholder-icon">
-                            <div class="placeholder-line left"></div>
-                            <div class="placeholder-line right"></div>
-
-                            <div class="placeholder-mountain"></div>
-                        </div>
-
-                    </img>
-
                 </div>
 
             </div>
 
             <div class="thinking-text">
                 <p>
-                    Wir arbeiten seit vielen Jahren als Führungspersonen im Sozial- und Gesundheitswesen – in alleiniger Verantwortung,
+                    Wir arbeiten seit vielen Jahren als Führungspersonen im Sozial- und Gesundheitswesen, in alleiniger Verantwortung,
                      in Co-Leitung und in Führungsteams.
                 </p>
                 <p>
-                    Als Vorgesetzte begleiten wir Führungspersonen in anspruchsvollen Situationen
+                    Als Vorgesetzte begleiteten wir Führungspersonen in anspruchsvollen Situationen
                      und organisationalen Veränderungen.
                 </p>
                 <p>
@@ -211,6 +207,22 @@
 
     </div>
 
+    <div class="audio-inner">
+
+        <p class="audio-eyebrow">Wollt ihr uns hören? wir machen Podcast</p>
+
+        <button class="audio-play-button" type="button">
+            <span class="audio-icon">▶</span>
+            <span class="audio-label">Abspielen</span>
+        </button>
+
+        <audio id="romans-audio">
+            <source src="{% static 'core/audio/romanspod.mp3' %}" type="audio/mpeg">
+            Ihr Browser unterstützt dieses Audio-Element nicht.
+        </audio>
+
+    </div>
+
 </section>
 
 
@@ -219,9 +231,9 @@
     <div class="offer-inner">
 
         <div class="offer-header">
-            <p class="offer-eyebrow">Unser Angebot</p>
-            <h2 class="offer-title">
-                Formate für Co-Leitungen und Führungsteams mit geteilter Verantwortung.
+            <p class="thinking-eyebrow">Unser Angebot</p>
+            <h2 class="thinking-title">
+                Formate für Co-Leitungen und Führungsteams mit geteilter Verantwortung
             </h2>
         </div>
 
@@ -247,11 +259,11 @@
                     <li>à 2.5 Stunden</li>
                     <li>kurze Zusammenfassung</li>
                 </ul>
-                <p class="offer-price">CHF 1’300 – 1’500</p>
+                <!-- <p class="offer-price">CHF 1’300 – 1’500</p> -->
             </article>
 
             <article class="offer-card">
-                <p class="offer-type">Begleitprozess</p>
+                <p class="offer-type">Beispiel</p>
                 <h3>Zusammenarbeit nachhaltig entwickeln</h3>
                 <p>
                     Für herausfordernde Situationen, in denen gemeinsame Führung
@@ -262,7 +274,7 @@
                     <li>à 1.5 – 2 Stunden</li>
                     <li>bei Bedarf kurze Zwischenabstimmungen</li>
                 </ul>
-                <p class="offer-price">CHF 2’000 – 3’000</p>
+                <!-- <p class="offer-price">CHF 2’000 – 3’000</p> -->
             </article>
 
         </div>
@@ -276,7 +288,7 @@
 
             <p>
                 Gerne kommen wir für das Coaching zu Ihnen. Reisespesen
-                verrechnen wir der Wegzeit zum Tarif CHF 200 / 60 Min.
+                verrechnen wir anhand Wegzeit zum Tarif CHF 200 / 60 Min.
             </p>
 
             <p>
@@ -308,25 +320,5 @@
 
 </section>
 
-
-<section id="audio" class="audio-section">
-
-    <div class="audio-inner">
-
-        <p class="audio-eyebrow">Audio</p>
-
-        <button class="audio-play-button" type="button">
-            <span class="audio-icon">▶</span>
-            <span class="audio-label">Abspielen</span>
-        </button>
-
-        <audio id="romans-audio">
-            <source src="{% static 'core/audio/romanspod.mp3' %}" type="audio/mpeg">
-            Ihr Browser unterstützt dieses Audio-Element nicht.
-        </audio>
-
-    </div>
-
-</section>
 
 {% endblock %}
